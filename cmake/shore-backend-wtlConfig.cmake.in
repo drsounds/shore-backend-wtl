@@ -1,0 +1,8 @@
+@PACKAGE_INIT@
+
+include(CMakeFindDependencyMacro)
+if(NOT TARGET shore::shore)
+  find_dependency(shore CONFIG)
+endif()
+include("${CMAKE_CURRENT_LIST_DIR}/shoreBackendWtlTargets.cmake")
+check_required_components(shore-backend-wtl)

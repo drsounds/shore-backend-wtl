@@ -1,0 +1,6 @@
+shore-backend-wtl provides a CMake package:
+
+  find_package(shore-backend-wtl CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE shore-backend-wtl::shore-backend-wtl)
+
+Construct your SHApp with shore::backend::wtl::CreateBackend().
